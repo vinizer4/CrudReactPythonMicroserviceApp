@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  react-crud:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-container
+    ports:
+      - '3000:3000'
+    stdin_open: true
